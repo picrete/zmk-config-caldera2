@@ -3,8 +3,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-    name: Setup Node.js
-    uses: actions/setup-node@v4
-    with:
-      node-version: '20'  # Set this to 20
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@vmain
+    
